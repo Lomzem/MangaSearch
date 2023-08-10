@@ -15,20 +15,46 @@ body {
 
 .container {
     text-align: center;
-    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 input {
-    padding: 10px;
+    padding: 50px 50px 500px;
+    font-size: 28px;
     background-color: var(--background-color);
     color: var(--text-color);
     border: 1px solid var(--text-color);
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+input[type="text"] {
+    font-size: 50px; /* Increased font size for input text */
 }
 
 button {
-    padding: 10px 20px;
+    padding: 30px 40px;
+    font-size: 28px;
     background-color: var(--button-background-color);
     color: var(--button-text-color);
     border: none;
+    border-radius: 10px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: var(--bright-button-background-color);
+}
+
+.container p {
+    font-size: 50px;
+    margin: 30px 0;
 }
